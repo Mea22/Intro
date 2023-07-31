@@ -1,0 +1,211 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: #FF7979;
+    background-image: url(./images/bg-intro-mobile.png);
+    margin: 88px 24px 68px;
+    height: 100vh;
+}
+
+.header-cont h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    height: 80px;
+    letter-spacing: -0.292px;
+    margin-bottom: 16px;
+}
+.header-cont p{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    height: 130px;
+    margin-bottom: 64px;
+}
+
+.free-trial{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 24px;
+}
+.free-trial p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.268px;
+    margin: 18px 66px;
+
+}
+.free-trial p strong{
+    font-weight: 700;
+}
+.form-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    
+}
+input{
+    color: #3D3B48;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    border-radius: 5px;
+    background: #FFF;
+}
+.first-name,
+.last-name,
+.email,
+.password{
+    padding:0px 0px 0px 19.41px;
+    width: 257.6px;
+    height: 54px;
+    border: 1px solid #DEDEDE;
+
+
+}
+.label{
+    position: relative;
+}
+.error-name,
+.error-surename,
+.error-mail,
+.error-pass
+{
+    display: none;
+    position: absolute;
+    margin: 16px 0px 0px -54px;
+}
+.error-msg-name,
+.error-msg-surename,
+.error-msg-mail,
+.error-msg-pass
+{
+    display: none;
+    justify-content: flex-end;
+    color: #FF7979;
+    text-align: right;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+    height: 17px;
+}
+.submit{
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+    border: 0px;
+    width: 279px;
+    height: 56px;
+    background: #38CC8B;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    margin-bottom: 8px;
+}
+.terms{
+    color: #BAB7D4;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+}
+.terms span{
+    color: #FF7979;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        flex-direction: row;
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+    .header-cont{
+        display: flex;
+        flex-direction: column;
+        max-width: 525px;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .header-cont h1{
+        height: 131px;
+        margin-bottom: 0px;
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -0.521px;
+        text-align: start;
+    }
+    .header-cont p{
+        text-align: start;
+        height: 78px;
+        margin-bottom: 0px;
+    }
+
+    .free-trial{
+        margin-bottom: 24px;
+    }
+    .free-trial p{
+        margin: 17px 0px;
+    }
+    .form-cont{
+        padding: 40px;
+    }
+    .form{
+        gap: 20px;
+    }
+    .first-name,
+    .last-name,
+    .email,
+    .password{
+        padding:0px 0px 0px 32px;
+        width: 426px;
+        height: 54px;
+    }
+    .submit{
+        width: 460px;
+    }
+    .submit:hover{
+        cursor: pointer;
+        background: #77E2B3;
+        box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    }
+    .terms{
+        height: 26px;
+    }
+   
+}

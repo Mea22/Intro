@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/reset.css">
+    <link rel="stylesheet" href="./resources/style.css">
+    <title>Intro</title>
+</head>
+<body>
+    <div class="header-cont">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="main-cont">
+        <div class="free-trial">
+            <p><strong>Try it free 7 days</strong>  then $20/mo. thereafter</p>
+        </div>
+        <div class="form-cont">
+            <div class="form">
+                <label for="username">
+                    <input type="text" placeholder="First Name" class="first-name">
+                    <img src="./resources/images/icon-error.svg" alt="error" class="error-name">
+                    <p class="error-msg-name">First Name cannot be empty</p>
+                </label>
+                <label for="last-name">
+                    <input type="text" placeholder="Last Name" class="last-name">
+                    <img src="./resources/images/icon-error.svg" alt="error" class="error-surename">
+                    <p class="error-msg-surename">Last Name cannot be empty</p>
+                </label>
+                <label for="email">
+                    <input type="email" placeholder="Email Address" class="email">
+                    <img src="./resources/images/icon-error.svg" alt="error" class="error-mail">
+                    <p class="error-msg-mail">Looks like this is not an email</p>
+                </label>
+                <label for="password">
+                    <input type="password" placeholder="Password" class="password">
+                    <img src="./resources/images/icon-error.svg" alt="error" class="error-pass">
+                    <p class="error-msg-pass">Password cannot be empty</p>
+                </label>
+                <input type="submit" value="CLAIM YOUR FREE TRIAL" class="submit" onclick="check()">
+            </div>
+                <p class="terms">By clicking the button, you are agreeing to our <span> Terms and Services</span></p>
+
+        </div>
+    </div>
+    <script src="./resources/script.js"></script>
+</body>
+</html>
